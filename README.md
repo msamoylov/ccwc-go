@@ -29,10 +29,14 @@ To install CCWC, follow these steps:
 
 ## Usage
 
-After installing, you can use CCWC as follows.
+```bash
+# Generate a file containing 100K lines:
+yes ccwc | head -n 100000 > out.txt
+```
 
-To count bytes in files:
+After installing, you can use CCWC as follows:
 
 ```bash
-./ccwc -c file1.txt file2.txt
+# Count bytes in files:
+./ccwc -c out.txt
 ```
