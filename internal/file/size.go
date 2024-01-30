@@ -36,11 +36,7 @@ func Size(path string) (int64, error) {
 	if err != nil {
 		return 0, err
 	}
-	defer func() {
-		if cerr := f.Close(); cerr != nil {
-			err = fmt.Errorf("failed to close file: %w", cerr)
-		}
-	}()
+	defer f.Close()
 
 	fi, err := f.Stat()
 	if err != nil {
