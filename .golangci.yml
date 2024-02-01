@@ -8,18 +8,40 @@ linters:
   # instead of letting them change without our control.
   disable-all: true
   enable:
-    # golangci-lint defaults:
+    - bodyclose
+    - depguard
+    - dogsled
+    - dupl
     - errcheck
+    - errorlint
+    - exportloopref
+    - funlen
+    - gocheckcompilerdirectives
+    - gochecknoinits
+    - goconst
+    - gocritic
+    - gocyclo
+    - gofmt
+    - goimports
+    - gomnd
+    - goprintffuncname
+    - gosec
     - gosimple
     - govet
     - ineffassign
-    - staticcheck
-    - unused
-
-    # Our own extras:
-    - gofumpt
-    - nolintlint # lints nolint directives
+    - lll
+    - misspell
+    - nakedret
+    - noctx
+    - nolintlint
     - revive
+    - staticcheck
+    - stylecheck
+    - typecheck
+    - unconvert
+    - unparam
+    - unused
+    - whitespace
 
 linters-settings:
   govet:
