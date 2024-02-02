@@ -29,6 +29,7 @@ import (
 	"io"
 	"os"
 	"strings"
+	"unicode/utf8"
 )
 
 // Config provides configuration for Processor.
@@ -128,9 +129,7 @@ func (p *Processor) Analyze(f *os.File) error {
 		p.bytes += len(line)
 
 		if p.cfg.CountChars {
-			for range line {
-				p.chars++
-			}
+			p.chars += utf8.RuneCountInString(line)
 		}
 
 		if p.cfg.CountWords {
