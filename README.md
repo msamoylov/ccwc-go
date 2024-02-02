@@ -19,11 +19,11 @@ To build CCWC, follow these steps:
 1. Ensure you have [Go installed](https://golang.org/dl/) on your system.
 2. Clone the repository:
    ```bash
-   git clone https://github.com/msamoylov/ccwc.git
+   git clone https://github.com/msamoylov/ccwc-go.git
    ```
 3. Navigate to the cloned directory:
    ```bash
-   cd ccwc
+   cd ccwc-go
    ```
 4. Build the project:
    ```bash
