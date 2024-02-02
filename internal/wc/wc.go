@@ -108,8 +108,8 @@ func (p *Processor) Analyze(f *os.File) error {
 		return fmt.Errorf("read %v: is a directory", f.Name())
 	}
 
-	// When counting only bytes, save some line- and word-counting overhead.
-	if p.cfg.CountBytes && !p.cfg.CountChars && !p.cfg.CountLines && !p.cfg.CountWords {
+	// When counting only bytes in a file, save some line- and word-counting overhead.
+	if f.Name() != "/dev/stdin" && p.cfg.CountBytes && !p.cfg.CountChars && !p.cfg.CountLines && !p.cfg.CountWords {
 		p.bytes = int(fi.Size())
 		return nil
 	}
