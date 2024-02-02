@@ -8,10 +8,13 @@ This tool provides functionalities to count bytes in text files, with a focus on
 ## Features
 
 - Count the number of bytes in each input file.
+- Count the number of characters in each input file.
+- Count the number of words in each input file.
+- Count the number of lines in each input file.
 
-## Installation
+## Build
 
-To install CCWC, follow these steps:
+To build CCWC, follow these steps:
 
 1. Ensure you have [Go installed](https://golang.org/dl/) on your system.
 2. Clone the repository:
@@ -31,12 +34,12 @@ To install CCWC, follow these steps:
 
 ```bash
 # Generate a file containing 100K lines:
-yes ccwc | head -n 100000 > out.txt
+yes ccwc | head -n 100000 > 100k.txt
 ```
 
-After installing, you can use CCWC as follows:
+After building, you can use CCWC as follows:
 
 ```bash
-# Count bytes in files:
-./ccwc -c out.txt
+# Count lines, words and bytes in files:
+./ccwc 100k.txt
 ```
