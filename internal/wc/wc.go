@@ -134,11 +134,7 @@ func (p *Processor) Analyze(f *os.File) error {
 		}
 
 		if p.cfg.CountWords {
-			wordScanner := bufio.NewScanner(strings.NewReader(line))
-			wordScanner.Split(bufio.ScanWords)
-			for wordScanner.Scan() {
-				p.words++
-			}
+			p.words += len(strings.Fields(line))
 		}
 	}
 
