@@ -1,6 +1,6 @@
 # CCWC (Coding Challenges Word Count)
 
-![build](https://github.com/msamoylov/ccwc/actions/workflows/go.yml/badge.svg) [![codecov](https://codecov.io/gh/msamoylov/ccwc/graph/badge.svg?token=Q4C78M9A53)](https://codecov.io/gh/msamoylov/ccwc)
+![build](https://github.com/msamoylov/ccwc-go/actions/workflows/go.yml/badge.svg) [![codecov](https://codecov.io/gh/msamoylov/ccwc-go/graph/badge.svg?token=Q4C78M9A53)](https://codecov.io/gh/msamoylov/ccwc-go)
 
 CCWC is a custom implementation of a word count utility for the challenge from [Coding Challenges](https://codingchallenges.fyi/challenges/challenge-wc). 
 This tool provides functionalities to count bytes in text files, with a focus on performance and accuracy.
