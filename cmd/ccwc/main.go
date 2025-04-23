@@ -48,7 +48,7 @@ func processFlags() {
 	flag.Parse()
 
 	// By default, wc prints three counts: the newline, words and byte counts.
-	if !(printBytes || printLines || printWords || printChars) {
+	if !printBytes && !printLines && !printWords && !printChars {
 		printBytes = true
 		printLines = true
 		printWords = true
